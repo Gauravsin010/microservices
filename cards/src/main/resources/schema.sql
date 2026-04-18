@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS card (
+  card_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  card_name VARCHAR(100) NOT NULL,
+  card_type VARCHAR(100) NOT NULL,
+  card_limit BIGINT NOT NULL,
+  created_at TIMESTAMP NOT NULL,
+  created_by VARCHAR(20) NOT NULL,
+  updated_at TIMESTAMP DEFAULT NULL,
+  updated_by VARCHAR(20) DEFAULT NULL
+);
