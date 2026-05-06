@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/accounts/accounts.iml" filepath="$PROJECT_DIR$/accounts/accounts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/cards/demo.iml" filepath="$PROJECT_DIR$/cards/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/loans/loans.iml" filepath="$PROJECT_DIR$/loans/loans.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mircoservices.iml" filepath="$PROJECT_DIR$/.idea/mircoservices.iml" />
