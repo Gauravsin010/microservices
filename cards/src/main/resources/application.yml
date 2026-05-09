@@ -6,7 +6,7 @@ spring:
     name: "cards"
 
   config:
-    import: "configserver:http://localhost:8071"
+    import: "${SPRING_CONFIG_IMPORT:optional:configserver:http://localhost:8071}"
 
   datasource:
     url: jdbc:h2:mem:testdb
@@ -21,6 +21,17 @@ spring:
     hibernate:
       ddl-auto: validate
     show-sql: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 server:
   port: 8001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
