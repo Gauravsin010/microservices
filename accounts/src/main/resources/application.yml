@@ -5,7 +5,7 @@ spring:
     active: "qa"
 
   config:
-    import: "configserver:http://localhost:8071"
+    import: "${SPRING_CONFIG_IMPORT:optional:configserver:http://localhost:8071}"
 
 
   datasource:
@@ -21,7 +21,18 @@ spring:
     hibernate:
       ddl-auto: validate
     show-sql: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 server:
   port: 8000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
